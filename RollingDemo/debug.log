@@ -1,0 +1,4 @@
+2018-01-04 09:48:45 TRACE - main thread Starts
+2018-01-04 09:48:45 DEBUG - Service Instance Created
+2018-01-04 09:48:45 INFO - Transfer the ammount rs.5000 from 1001 to 1002
+2018-01-04 09:48:45 TRACE - tranferFund() invoked in service

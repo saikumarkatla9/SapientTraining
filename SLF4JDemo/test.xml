@@ -1,0 +1,32 @@
+<log4j:event logger="sapient"
+             timestamp="1514975345537" level="TRACE" thread="main">
+  <log4j:message>main thread Starts</log4j:message>
+  <log4j:locationInfo class="com.sapient.client.TransferClient"
+                      method="main" file="TransferClient.java" line="15"/>
+
+</log4j:event>
+
+<log4j:event logger="sapient"
+             timestamp="1514975345583" level="DEBUG" thread="main">
+  <log4j:message>Service Instance Created</log4j:message>
+  <log4j:locationInfo class="com.sapient.client.TransferClient"
+                      method="main" file="TransferClient.java" line="17"/>
+
+</log4j:event>
+
+<log4j:event logger="sapient"
+             timestamp="1514975345583" level="INFO" thread="main">
+  <log4j:message>Transfer the ammount rs.5000 from 1001 to 1002</log4j:message>
+  <log4j:locationInfo class="com.sapient.client.TransferClient"
+                      method="main" file="TransferClient.java" line="20"/>
+
+</log4j:event>
+
+<log4j:event logger="sapient"
+             timestamp="1514975345583" level="TRACE" thread="main">
+  <log4j:message>tranferFunf() invoked in service</log4j:message>
+  <log4j:locationInfo class="com.sapient.service.SerImpl"
+                      method="transferFund" file="SerImpl.java" line="32"/>
+
+</log4j:event>
+
