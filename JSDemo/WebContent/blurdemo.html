@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function validate(elem){
+	document.getElementById("err1").innerHTML="";
+	if(isNaN(elem.value)){
+		document.getElementById("err1").innerHTML="id must be type number";
+		elem.focus();
+	}
+		
+}
+function makeActive(element){
+	element.style.backgroundColor = "yellow";
+	element.style.borderColor = "red";
+}
+function makeNotActive(element){
+	element.style.backgroundColor = "white";
+	element.style.borderColor = "gray";
+}
+</script>
+</head>
+<body onunload="alert('window/tab must be closed')">
+<h1>Blur event</h1>
+<hr/>
+<form>
+	<table cellpadding="10" bgcolor="#e3e3e3">
+		<tr>
+			<td>empid</td>
+			<td><input type="text" id="txtid" onblur="makeNotActive(this)" onfocus="makeActive(this)"/></td>
+			<td id="err1"></td>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td><input type="text" id="txtname" onblur="makeNotActive(this)" onfocus="makeActive(this)"/></td>
+			
+		</tr>
+		
+		<tr><td colspan="3" align="center"><input type="submit" /></td></tr>
+	</table>
+	</form>
+</body>
+</html>
