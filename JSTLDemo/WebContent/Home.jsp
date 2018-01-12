@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,11 +9,11 @@
 <style type="text/css">
 	a{
 		 background-color: blue;
-   	color:white;
-   text-decoration: none;
-   padding: 5px;
-   border-radius: 5px;
-   box-shadow: 5px 5px 5px gray;
+   		color:white;
+   		text-decoration: none;
+   		padding: 5px;
+   		border-radius: 5px;
+   		box-shadow: 5px 5px 5px gray;
 
 		
 		
@@ -25,12 +26,10 @@
 </style>
 </head>
 <body>
+<%-- <%@include file="Header.jsp" %> --%>
+<jsp:include page="Header.jsp"/>
 <h1 align="center">Home page</h1>
-<div align="center">
-	<%=application.getInitParameter("headstr") %>></br>
-	
-</div>
-</hr>
+
 <table align="center" cellpadding="10" cellsapcing="20">
 	<tr>
 		<td><a href="TaxFrm.jsp">Tax Calculation</a></td>

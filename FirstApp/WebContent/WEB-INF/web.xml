@@ -26,25 +26,33 @@
     <url-pattern>/eligible</url-pattern>
   </servlet-mapping>
   <servlet>
-    
     <servlet-name>myquiz</servlet-name>
     <servlet-class>com.sapient.web.QuizServlet</servlet-class>
     <init-param>
-    	<param-name>passper</param-name>
-    	<param-value>50</param-value>
+      <param-name>passper</param-name>
+      <param-value>50</param-value>
     </init-param>
   </servlet>
-  	<servlet-mapping>
-    	<servlet-name>myquiz</servlet-name>
-    	<url-pattern>/quiz</url-pattern>
-  	</servlet-mapping>
-  	
-  	<context-param>	
-  		<param-name>headstr</param-name>
-  		<param-value>powered by sapient technologies</param-value>
-  	</context-param>
-  <context-param>	
-  	<param-name>Homepg</param-name>
-  	<param-value>Home.jsp</param-value>
+  <servlet-mapping>
+    <servlet-name>myquiz</servlet-name>
+    <url-pattern>/quiz</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>headstr</param-name>
+    <param-value>powered by sapient technologies</param-value>
   </context-param>
+  <context-param>
+    <param-name>Homepg</param-name>
+    <param-value>Home.jsp</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>DownServlet</display-name>
+    <servlet-name>DownServlet</servlet-name>
+    <servlet-class>com.sapient.web.DownServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownServlet</servlet-name>
+    <url-pattern>/downamex</url-pattern>
+  </servlet-mapping>
 </web-app>
