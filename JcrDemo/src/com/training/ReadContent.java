@@ -20,8 +20,8 @@ public class ReadContent {
 		Property prop = node.getProperty("lifecycle of servlet");
 		System.out.println(prop.getString());
 		
-		System.out.println("getting all the prpertirs of java node---");
-		Node java = ses.getNode(".corses/java");
+		System.out.println("getting all the properties of java node---");
+		Node java = ses.getNode(".courses/java");
 		PropertyIterator it= java.getProperties();
 		Property property=null;
 		while(it.hasNext()){
